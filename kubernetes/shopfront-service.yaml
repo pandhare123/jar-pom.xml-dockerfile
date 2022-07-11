@@ -18,7 +18,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: shopfront
+  name: shopfront-aditya
 spec:
   selector:
     matchLabels:
@@ -31,7 +31,7 @@ spec:
     spec:
       containers:
       - name: djshopfront
-        image: danielbryantuk/djshopfront:latest
+        image: vinaytalla/aditya:44
         ports:
         - containerPort: 8010
         livenessProbe:
